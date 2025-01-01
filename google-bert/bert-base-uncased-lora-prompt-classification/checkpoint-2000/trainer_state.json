@@ -1,0 +1,79 @@
+{
+  "best_metric": 0.6932790875434875,
+  "best_model_checkpoint": "google-bert/bert-base-uncased-lora-prompt-classification\\checkpoint-2000",
+  "epoch": 2.0,
+  "eval_steps": 500,
+  "global_step": 2000,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.5,
+      "grad_norm": 4.114511966705322,
+      "learning_rate": 0.00095,
+      "loss": 0.5633,
+      "step": 500
+    },
+    {
+      "epoch": 1.0,
+      "grad_norm": 9.25298023223877,
+      "learning_rate": 0.0009000000000000001,
+      "loss": 0.7843,
+      "step": 1000
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.508,
+      "eval_loss": 0.7256326079368591,
+      "eval_runtime": 105.0905,
+      "eval_samples_per_second": 9.516,
+      "eval_steps_per_second": 2.379,
+      "step": 1000
+    },
+    {
+      "epoch": 1.5,
+      "grad_norm": 11.463422775268555,
+      "learning_rate": 0.00085,
+      "loss": 0.7538,
+      "step": 1500
+    },
+    {
+      "epoch": 2.0,
+      "grad_norm": 6.838447093963623,
+      "learning_rate": 0.0008,
+      "loss": 0.7523,
+      "step": 2000
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.492,
+      "eval_loss": 0.6932790875434875,
+      "eval_runtime": 96.0453,
+      "eval_samples_per_second": 10.412,
+      "eval_steps_per_second": 2.603,
+      "step": 2000
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 10000,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 10,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 2120854343491584.0,
+  "train_batch_size": 4,
+  "trial_name": null,
+  "trial_params": null
+}
