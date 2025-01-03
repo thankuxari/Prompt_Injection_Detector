@@ -6,12 +6,12 @@ import torch
 
 def generate_pet_name(animal_type):
     # Load the model and tokenizer
-    model_name = "Qwen/Qwen2.5-7B-Instruct"
+    model_name = "yulan-team/YuLan-Mini"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.float16,  
-        device_map="auto"           
+        device_map="cuda:0"           
     )
 
     # Create a Hugging Face pipeline
@@ -33,5 +33,4 @@ def generate_pet_name(animal_type):
     response = name_chain.run({"animal_type": animal_type})
     
     return response
-
 

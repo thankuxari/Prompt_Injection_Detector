@@ -3,8 +3,8 @@ import langchain_helper as lch
 
 st.title("Pet Name Generator")
 
-animal_type = st.sidebar.selectbox("What kind of animal do you have?", ["Dog", "Cat", "Fish", "Bird"])
+name = st.sidebar.selectbox('What type of animal do you have',['cat','dog','bird','cow']);
 
-if animal_type : 
-    response = lch.generate_pet_name(animal_type)
+if name : 
+    response = lch.generate_pet_name(name)
     st.text(response)
